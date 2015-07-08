@@ -8,31 +8,3 @@ title: Dominic Kwok
 	Hello world
 	edit #2
 </div><!-- /.blurb -->
-
-<script>
-
-	    $.ajax({
-	      type: 'POST',
-	      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-	      data: {
-	        'key': 'VuvuzXnNdNIJWzL05brfzA',
-	        'message': {
-	          'from_email': 'dkwok@altvil.com',
-	          'to': [
-	              {
-	                'email': 'dkwok@altvil.com',
-	                'name': 'Dominic Kwok',
-	                'type': 'to'
-	              }
-	            ],
-	          'autotext': 'true',
-	          'subject': 'YOUR SUBJECT HERE!',
-	          'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
-	        }
-	      }
-	     }).done(function(response) {
-	       console.log(response); // if you're into that sorta thing
-	     });
-	
-
-</script>
