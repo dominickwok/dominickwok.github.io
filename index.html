@@ -10,8 +10,7 @@ title: Dominic Kwok
 </div><!-- /.blurb -->
 
 <script>
-	
-	function sendMail() {
+
 	    $.ajax({
 	      type: 'POST',
 	      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -34,6 +33,6 @@ title: Dominic Kwok
 	     }).done(function(response) {
 	       console.log(response); // if you're into that sorta thing
 	     });
-	}
+	
 
 </script>
